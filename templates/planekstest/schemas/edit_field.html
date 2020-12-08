@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="main-container">
+<form method="post" class="field-form">
+    {% csrf_token %}
+    <div>
+        <select name="type" id="type">
+            <option value="Name">Name</option>
+            <option value="Age">Age</option>
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+            <option value="Range Integer">Range Integer</option>
+        </select>
+
+        <input style="width: 240px;" type="text" name="value" placeholder="Name" value="{{ form.initial.value }}">
+    </div>
+    <div class="range-inputs-submit">
+        <div id="range-inputs">
+            <input type="number" name="start" placeholder="Start">
+            <input type="number" name="end" placeholder="End">
+        </div>
+        <br>
+
+        <button class="main-button" type="submit">Save</button>
+        <a href="{% url 'schema' object.schema.pk %}" class="main-link cancel-delete-link">Cancel</a>
+    </div>
+</form>
+</div>
+
+
+{% endblock %}

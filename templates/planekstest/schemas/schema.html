@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="main-container">
+    <div class="schema-item">
+        <h1>{{ schema.name }}</h1>
+        <a href="{% url 'generate_random_schema' schema.pk %}"><button class="main-button">Generate Data</button></a>
+    </div>
+    <br>
+
+    {% for field in schema.schema_fields.all %}
+        <div class="field-wrap">
+            <div class="field">
+                <div class="field-info">
+                    <p><b>Name:</b> {{ field.value }} &nbsp;</p><p><b>Type:</b> {{ field.type }}</p><br>
+                    {% if field.type == 'Range Integer' %}
+                        <p>&nbsp; | Start: {{ field.start }} End: {{ field.end }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="{% url 'edit_field' field.pk %}"><button class="main-button">Edit Field</button></a>
+                <a href="{% url 'delete_schema_field' field.pk %}"><button class="main-button">Delete Field</button></a>
+            </div>
+        </div>
+        <br>
+    {% endfor %}
+
+    <div class="main-container">
+        <h2>Add a new field:</h2>
+        <form method="post" class="field-form">
+            {% csrf_token %}
+            <div>
+                <select name="type" id="type">
+                    <option value="Name">Name</option>
+                    <option value="Age">Age</option>
+                    <option value="Email">Email</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Range Integer">Range Integer</option>
+                </select>
+
+                <input style="width: 300px;" type="text" name="value" placeholder="Name">
+            </div>
+            <div class="range-inputs-submit">
+                <div id="range-inputs">
+                    <input type="number" name="start" placeholder="Start (1)">
+                    <input type="number" name="end" placeholder="End (50)">
+                </div>
+                <br>
+
+                <button class="main-button" type="submit">Add Field</button>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+
+<h1>Current Data</h1>
+
+<div class="current-data">
+{% for field in schema.schema_fields.all %}
+    <div class="data-field">
+        <i>{{ field.value }}</i>
+        {% for row in field.field_rows.all %}
+            <p>{{row.data}}</p>
+        {% endfor %}
+    </div>
+{% endfor %}
+</div>
+
+<br>
+
+{% if button_status == 'on' %}
+    <a href="{% url 'clear_data' schema.pk %}"><button class="main-button">Clear Data</button></a>
+    <a href="{% url 'export_data' schema.pk %}"><button class="main-button">Download</button></a>
+{% else %}
+    <p>Generate some data</p>
+{% endif %}
+<br>
+<br>
+
+{% endblock %}

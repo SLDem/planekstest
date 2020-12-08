@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="schema-item">
+    <h1><b>Data schemas:</b></h1>
+    <a class="main-link" href="{% url 'new_schema' %}">New schema</a>
+</div>
+<br>
+
+{% for schema in schemas %}
+<div class="main-container">
+    <div class="schema-item">
+        <div class="edit-buttons">
+            <a href="{% url 'schema' schema.pk %}"><h2>{{ schema.name }} </h2></a><br>
+
+        </div>
+
+        <div class="edit-buttons">
+            {% if schema.date_modified %}
+                <p>Modified: {{ schema.date_modified }}&nbsp;</p>
+            {% endif %}
+            <a class="main-link" href="{% url 'edit_schema' schema.pk %}">Edit schema</a>
+            <a class="main-link" href="{% url 'delete_schema' schema.pk %}">Delete</a>
+        </div>
+    </div>
+</div>
+<br>
+
+{% endfor %}
+{% endblock %}

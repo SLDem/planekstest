@@ -1,0 +1,72 @@
+.form-new-input {
+    margin: 10px 0;
+}
+
+.field-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.field {
+    border: 3px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 82%;
+}
+
+.field-info {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    width: 18%;
+    min-width: 180px;
+}
+
+select {
+    padding: 10px;
+}
+
+#range-inputs input {
+    padding: 10px;
+    width: 100px;
+}
+
+.field-form, #range-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.range-inputs-submit, .edit-buttons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.schema-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entries-input {
+    width: 100%;
+    padding: 10px;
+}
+
+#schema-progress-bar {
+    width: 500px;
+    height: 20px;
+}
+
+.current-data {
+    display: flex;
+    gap: 20px;
+}

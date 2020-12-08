@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="main-container">
+    <h1><b>New schema</b></h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <button class="main-button" type="submit">Create</button>
+    </form>
+</div>
+{% endblock %}

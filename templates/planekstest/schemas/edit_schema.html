@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="main-container">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <div class="edit-buttons">
+            <button class="main-button" type="submit">Save Edits</button>
+            <a href="{% url 'schemas' %}" class="main-link cancel-delete-link">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load static %}
+<html>
+<head>
+    <title>PlaneksCSVGen</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'planekstest/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'planekstest/authentication.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'planekstest/schemas.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="main-nav-wrap">
+        <div class="main-nav">
+            <div>
+                <ul class="nav-ul">
+                    <li><a href="#"><b>PlaneksCSVGen</b></a></li>
+                    <li><a href="{% url 'schemas' %}">Schemas</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav-ul login-out">
+                    {% if request.user.is_authenticated %}
+                        <li><p>Hello, {{ request.user }}</p></li>
+                        <li><a href="{% url 'logout' %}"><b>Logout</b></a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}"><b>Login</b></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrap">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="{% static 'planekstest/scripts.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="main-container">
+<form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete schema {{ object.name }}?</p>
+    <br>
+    <div class="edit-buttons">
+        <button class="main-button" type="submit">Confirm</button>
+        <a href="{{ view.get_success_url }}" class="main-link cancel-delete-link">Cancel</a>
+    </div>
+</form>
+</div>
+
+
+{% endblock %}
