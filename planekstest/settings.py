@@ -27,7 +27,7 @@ SECRET_KEY = 'b(z)sa$$*&7bq)da38)y+c(m7!%hhlb#$hen0bc9v8%@uq0p)m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['planekstest.herokuapp.com']
+ALLOWED_HOSTS = ['planekstest.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -143,12 +143,12 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 
 
-BROKER_URL = os.environ.get("REDISCLOUD_URL", "django://")
-BROKER_POOL_LIMIT = 1
-BROKER_CONNECTION_MAX_RETRIES = None
-
-BROKER_TRANSPORT_OPTIONS = {
-    "max_connections": 2,
-}
+# BROKER_URL = os.environ.get("REDISCLOUD_URL", "django://")
+# BROKER_POOL_LIMIT = 1
+# BROKER_CONNECTION_MAX_RETRIES = None
+#
+# BROKER_TRANSPORT_OPTIONS = {
+#     "max_connections": 2,
+# }
 
 django_heroku.settings(locals())

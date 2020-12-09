@@ -28,6 +28,7 @@ function get_schema_task_info(task_id) {
             s_frm.html('');
             if (data.state == 'PENDING') {
                 s_frm.html('Please wait...');
+                console.log(data, task_id)
             } else if (data.state == 'PROGRESS' || data.state == 'SUCCESS') {
                 s_pgrbar.css('display', 'inline');
                 s_pgrbar.val(data.result.percent);
