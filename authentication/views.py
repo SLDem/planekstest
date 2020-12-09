@@ -13,7 +13,6 @@ class SignupView(FormView):
         form.save(commit=False)
         raw_password = form.cleaned_data['password1']
         name = form.cleaned_data['name']
-        email = form.cleaned_data['email']
-        user = User.objects.create_user(name=name, email=email, password=raw_password)
+        user = User.objects.create_user(name=name, password=raw_password)
         user.save()
         return redirect('login')
