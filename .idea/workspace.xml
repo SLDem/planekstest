@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ce46af7-f654-483f-86bf-dc77fa595495" name="Default Changelist" comment="" />
+    <list default="true" id="1ce46af7-f654-483f-86bf-dc77fa595495" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planekstest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/planekstest/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planekstest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/planekstest/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/planekstest/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/planekstest/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/planekstest/schemas/schema.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planekstest/schemas/schema.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/planekstest/schemas/schemas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planekstest/schemas/schemas.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lEKDm6KTHxxiJ5DCZtmiT7LZvx" />
   <component name="ProjectViewState">
@@ -14,7 +28,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../buyerr" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -76,49 +91,49 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="719" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607158858693" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1607413559952">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1607441712302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607413559952" />
-    <state width="1899" height="189" key="GridCell.Tab.0.bottom" timestamp="1607431410978">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712302" />
+    <state width="1899" height="253" key="GridCell.Tab.0.bottom" timestamp="1607441712921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="189" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607431410978" />
-    <state width="1899" height="189" key="GridCell.Tab.0.center" timestamp="1607431410978">
+    <state width="1899" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712921" />
+    <state width="1899" height="253" key="GridCell.Tab.0.center" timestamp="1607441712920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="189" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607431410978" />
-    <state width="1899" height="189" key="GridCell.Tab.0.left" timestamp="1607431410978">
+    <state width="1899" height="253" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712920" />
+    <state width="1899" height="253" key="GridCell.Tab.0.left" timestamp="1607441712920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="189" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607431410978" />
-    <state width="1899" height="189" key="GridCell.Tab.0.right" timestamp="1607431410978">
+    <state width="1899" height="253" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712920" />
+    <state width="1899" height="253" key="GridCell.Tab.0.right" timestamp="1607441712920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="189" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607431410978" />
-    <state width="1899" height="189" key="GridCell.Tab.1.bottom" timestamp="1607431410978">
+    <state width="1899" height="253" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712920" />
+    <state width="1899" height="189" key="GridCell.Tab.1.bottom" timestamp="1607441712916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="189" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607431410978" />
-    <state width="1899" height="189" key="GridCell.Tab.1.center" timestamp="1607431410978">
+    <state width="1899" height="189" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712916" />
+    <state width="1899" height="189" key="GridCell.Tab.1.center" timestamp="1607441712915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="189" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607431410978" />
-    <state width="1899" height="189" key="GridCell.Tab.1.left" timestamp="1607431410978">
+    <state width="1899" height="189" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712915" />
+    <state width="1899" height="189" key="GridCell.Tab.1.left" timestamp="1607441712915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="189" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607431410978" />
-    <state width="1899" height="189" key="GridCell.Tab.1.right" timestamp="1607431410978">
+    <state width="1899" height="189" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712915" />
+    <state width="1899" height="189" key="GridCell.Tab.1.right" timestamp="1607441712916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="189" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607431410978" />
+    <state width="1899" height="189" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607441712916" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1607440980013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607440980013" />
-    <state x="667" y="253" width="852" height="673" key="find.popup" timestamp="1607347861273">
+    <state x="667" y="253" width="852" height="673" key="find.popup" timestamp="1607502662694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="852" height="673" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607347861273" />
+    <state x="667" y="253" width="852" height="673" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607502662694" />
   </component>
 </project>

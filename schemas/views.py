@@ -48,7 +48,7 @@ def get_schema_task_info(request):
         return HttpResponse('No schema job id given')
 
 
-def export_data(pk):
+def export_data(request, pk):
 
     response = HttpResponse(content_type='text/csv')
     writer = csv.writer(response)
@@ -85,7 +85,10 @@ class Schemas(ListView):
     context_object_name = 'schemas'
 
     def get_queryset(self):
-        schemas = Schema.objects.filter(user=self.request.user)
+        if self.request.user.is_authenticated:
+            schemas = Schema.objects.filter(user=self.request.user)
+        else:
+            return redirect('login')
         return schemas
 
 
@@ -133,7 +136,7 @@ class SchemaView(DetailView, FormView):
         return redirect('schema', pk=schema.pk)
 
 
-def clear_data(pk):
+def clear_data(request, pk):
     schema = Schema.objects.get(pk=pk)
     fields = schema.schema_fields.all()
     for field in fields:

@@ -55,27 +55,24 @@
 </div>
 <br>
 
-<h1>Current Data</h1>
-
-<div class="current-data">
-{% for field in schema.schema_fields.all %}
-    <div class="data-field">
-        <i>{{ field.value }}</i>
-        {% for row in field.field_rows.all %}
-            <p>{{row.data}}</p>
-        {% endfor %}
-    </div>
-{% endfor %}
-</div>
-
-<br>
-
 {% if button_status == 'on' %}
     <a href="{% url 'clear_data' schema.pk %}"><button class="main-button">Clear Data</button></a>
     <a href="{% url 'export_data' schema.pk %}"><button class="main-button">Download</button></a>
+    <h1>Current Data</h1>
+    <div class="current-data">
+    {% for field in schema.schema_fields.all %}
+        <div class="data-field">
+            <i>{{ field.value }}</i>
+            {% for row in field.field_rows.all %}
+                <p>{{row.data}}</p>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    </div>
 {% else %}
     <p>Generate some data</p>
 {% endif %}
+
 <br>
 <br>
 

@@ -1,30 +1,34 @@
 {% extends 'base.html' %}
 {% block content %}
 
+{% if request.user.is_authenticated %}
 <div class="schema-item">
     <h1><b>Data schemas:</b></h1>
     <a class="main-link" href="{% url 'new_schema' %}">New schema</a>
 </div>
 <br>
+{% if schemas %}
+    {% for schema in schemas %}
+    <div class="main-container">
+        <div class="schema-item">
+            <div class="edit-buttons">
+                <a href="{% url 'schema' schema.pk %}"><h2>{{ schema.name }} </h2></a><br>
 
-{% for schema in schemas %}
-<div class="main-container">
-    <div class="schema-item">
-        <div class="edit-buttons">
-            <a href="{% url 'schema' schema.pk %}"><h2>{{ schema.name }} </h2></a><br>
+            </div>
 
-        </div>
-
-        <div class="edit-buttons">
-            {% if schema.date_modified %}
-                <p>Modified: {{ schema.date_modified }}&nbsp;</p>
-            {% endif %}
-            <a class="main-link" href="{% url 'edit_schema' schema.pk %}">Edit schema</a>
-            <a class="main-link" href="{% url 'delete_schema' schema.pk %}">Delete</a>
+            <div class="edit-buttons">
+                {% if schema.date_modified %}
+                    <p>Modified: {{ schema.date_modified }}&nbsp;</p>
+                {% endif %}
+                <a class="main-link" href="{% url 'edit_schema' schema.pk %}">Edit schema</a>
+                <a class="main-link" href="{% url 'delete_schema' schema.pk %}">Delete</a>
+            </div>
         </div>
     </div>
-</div>
-<br>
-
-{% endfor %}
+    <br>
+    {% endfor %}
+{% endif %}
+{% else %}
+    <h1>Login to view and create schemas</h1>
+{% endif %}
 {% endblock %}
