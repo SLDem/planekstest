@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1ce46af7-f654-483f-86bf-dc77fa595495" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile.real" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.real" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,9 +131,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607509486580" />
-    <state x="667" y="253" width="852" height="673" key="find.popup" timestamp="1607506931867">
+    <state x="667" y="253" width="852" height="673" key="find.popup" timestamp="1607514706148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="852" height="673" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607506931867" />
+    <state x="667" y="253" width="852" height="673" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607514706148" />
   </component>
 </project>
