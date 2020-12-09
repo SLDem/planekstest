@@ -143,12 +143,12 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 
 
-# BROKER_URL = os.environ.get("REDISCLOUD_URL", "django://")
-# BROKER_POOL_LIMIT = 1
-# BROKER_CONNECTION_MAX_RETRIES = None
-#
-# BROKER_TRANSPORT_OPTIONS = {
-#     "max_connections": 2,
-# }
+BROKER_URL = os.environ.get("REDISCLOUD_URL", "django://")
+BROKER_POOL_LIMIT = 1
+BROKER_CONNECTION_MAX_RETRIES = None
+
+BROKER_TRANSPORT_OPTIONS = {
+    "max_connections": 2,
+}
 
 django_heroku.settings(locals())

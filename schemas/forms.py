@@ -14,7 +14,7 @@ class SchemaForm(forms.ModelForm):
 
 class SchemaFieldForm(forms.ModelForm):
     value = forms.CharField(widget=forms.TextInput(attrs={'class': 'schema-field-name-input',
-                                                          'placeholder': 'Name'}), label='')
+                                                          'placeholder': 'Name'}), label='', required=True)
     start = forms.IntegerField(required=False)
     end = forms.IntegerField(required=False)
 
