@@ -13,7 +13,7 @@ s_frm.submit(function() {
             }
         },
         error: function(data) {
-            console.log('Something went wrong1.')
+            console.log(data)
         }
     });
     return false;
