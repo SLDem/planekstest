@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'b(z)sa$$*&7bq)da38)y+c(m7!%hhlb#$hen0bc9v8%@uq0p)m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['planekstest.herokuapp.com']
 
@@ -154,3 +155,5 @@ BROKER_TRANSPORT_OPTIONS = {
     "max_connections": 2,
 }
 BROKER_POOL_LIMIT = None
+
+django_heroku.settings(locals())
