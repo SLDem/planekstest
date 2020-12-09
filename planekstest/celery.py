@@ -11,8 +11,8 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 
 app.autodiscover_tasks()
 
-app.conf.update(BROKER_URL=os.environ.get('REDIS_URL'),
-                CELERY_RESULT_BACKEND=os.environ.get('REDIS_URL'))
+# app.conf.update(BROKER_URL=os.environ.get('REDIS_URL'),
+#                 CELERY_RESULT_BACKEND=os.environ.get('REDIS_URL'))
 
 
 @app.task(bind=True)

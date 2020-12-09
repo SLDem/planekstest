@@ -143,5 +143,4 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 
 
-
 django_heroku.settings(locals())
