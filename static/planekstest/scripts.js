@@ -1,4 +1,3 @@
-//celery progress bar
 var s_frm = $('#generate-schema-form');
 var s_pgrbar = $('#schema-progress-bar');
 
