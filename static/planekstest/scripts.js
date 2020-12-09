@@ -43,7 +43,6 @@ function get_schema_task_info(task_id) {
                 s_frm.html('Done');
                 $('#go-back-button').css('display', 'inline')
             }
-
         },
         error: function(data) {
             console.log(data)
