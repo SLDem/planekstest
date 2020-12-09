@@ -2,7 +2,7 @@ This is the test task for PLANEKS company.
 
 To run the application:
 
-(Make sure you have rabbitMq server running on your machine)
+(Make sure you have RabbitMQ or Redis server running on your machine)
 
 1. Open cmd or any other command line tool and navigate to root directory containing 'manage.py' file.
 2. Run "pip install requirements.txt"
