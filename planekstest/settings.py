@@ -126,11 +126,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 LOGIN_REDIRECT_URL = 'schemas'
 LOGOUT_REDIRECT_URL = 'login'
@@ -147,11 +147,7 @@ CELERY_RESULT_SERIALIZER = 'json'
 BROKER_URL = os.environ.get("REDISCLOUD_URL", "django://")
 BROKER_POOL_LIMIT = 1
 BROKER_CONNECTION_MAX_RETRIES = None
-if BROKER_URL == "django://":
-    INSTALLED_APPS += ("kombu.transport.django",)
 
 BROKER_TRANSPORT_OPTIONS = {
     "max_connections": 2,
 }
-BROKER_POOL_LIMIT = None
-
