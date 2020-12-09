@@ -8,6 +8,7 @@ s_frm.submit(function() {
         url: s_frm.attr('action'),
         data: s_frm.serialize(),
         success: function(data) {
+            console.log('success')
             if (data.task_id != null) {
                 get_schema_task_info(data.task_id);
             }
@@ -28,11 +29,12 @@ function get_schema_task_info(task_id) {
             s_frm.html('');
             if (data.state == 'PENDING') {
                 s_frm.html('Please wait...');
-                console.log(data, task_id)
+                console.log(data, task_id, 'pending')
             } else if (data.state == 'PROGRESS' || data.state == 'SUCCESS') {
                 s_pgrbar.css('display', 'inline');
                 s_pgrbar.val(data.result.percent);
                 s_frm.html('Rows created ' + data.result.current + ' out of ' + data.result.total);
+                console.log('progress')
             }
             if (data.state != 'SUCCESS') {
                 setTimeout(function() {
