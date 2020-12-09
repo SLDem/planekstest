@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'b(z)sa$$*&7bq)da38)y+c(m7!%hhlb#$hen0bc9v8%@uq0p)m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['planekstest.herokuapp.com']
 
