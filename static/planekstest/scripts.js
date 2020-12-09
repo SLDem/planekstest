@@ -8,7 +8,6 @@ s_frm.submit(function() {
         url: s_frm.attr('action'),
         data: s_frm.serialize(),
         success: function(data) {
-            console.log(data)
             if (data.task_id != null) {
                 get_schema_task_info(data.task_id);
             }

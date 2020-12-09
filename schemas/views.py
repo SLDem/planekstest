@@ -26,7 +26,7 @@ def generate_random_schema(request, pk):
             total_entries = form.cleaned_data['total_entries']
             schema.entries = total_entries
             schema.save()
-            task = create_schema(total_entries, schema.pk)
+            task = create_schema.delay(total_entries, schema.pk)
             return HttpResponse(json.dumps({'task_id': task.id}), content_type='application/json')
         else:
             return HttpResponse(json.dumps({'task_id': None}), content_type='application/json')
