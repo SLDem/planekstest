@@ -135,16 +135,12 @@ STATICFILES_DIRS = (
 LOGIN_REDIRECT_URL = 'schemas'
 LOGOUT_REDIRECT_URL = 'login'
 
-CELERY_BROKER_BACKEND = "db+sqlite:///celery.sqlite"
-CELERY_CACHE_BACKEND = "db+sqlite:///celery.sqlite"
-# CELERY_RESULT_BACKEND = 'django-db"
+CELERY_BROKER_URL = 'redis://:pd901027e0ad0f3dad16304bf9b2cf2f8fe3fd656317e1653fa0292b1ebd37c80@ec2-54-161-251-41.compute-1.amazonaws.com:7019'
+CELERY_RESULT_BACKEND = 'redis://:pd901027e0ad0f3dad16304bf9b2cf2f8fe3fd656317e1653fa0292b1ebd37c80@ec2-54-161-251-41.compute-1.amazonaws.com:7019'
 
-BROKER_URL=os.environ.get('REDIS_URL')
-CELERY_RESULT_BACKEND=os.environ.get('REDIS_URL')
-
-CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
+CELERY_ACCEPT_CONTENT = ['json']
 
 
 django_heroku.settings(locals())
