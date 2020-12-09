@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ce46af7-f654-483f-86bf-dc77fa595495" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile.real" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.real" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,9 +122,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607505599833" />
-    <state x="667" y="253" width="852" height="673" key="find.popup" timestamp="1607505892679">
+    <state x="667" y="253" width="852" height="673" key="find.popup" timestamp="1607506931867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="852" height="673" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607505892679" />
+    <state x="667" y="253" width="852" height="673" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607506931867" />
   </component>
 </project>
