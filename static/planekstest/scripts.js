@@ -32,7 +32,6 @@ function get_schema_task_info(task_id) {
                 s_pgrbar.css('display', 'inline');
                 s_pgrbar.val(data.result.percent);
                 s_frm.html('Rows created ' + data.result.current + ' out of ' + data.result.total);
-                console.log('progress')
             }
             if (data.state != 'SUCCESS') {
                 setTimeout(function() {
