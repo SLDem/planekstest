@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -149,3 +150,5 @@ BROKER_CONNECTION_MAX_RETRIES = None
 BROKER_TRANSPORT_OPTIONS = {
     "max_connections": 2,
 }
+
+django_heroku.settings(locals())
