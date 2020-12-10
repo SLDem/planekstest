@@ -147,6 +147,4 @@ CELERY_ACCEPT_CONTENT = ['json']
 
 BROKER_POOL_LIMIT = 1
 
-DJANGO_CELERY_RESULTS_TASK_ID_MAX_LENGTH = 191
-
 django_heroku.settings(locals())
