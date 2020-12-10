@@ -1,2 +1,2 @@
 web: gunicorn planekstest.wsgi --log-file -
-worker: celery -A planekstest worker --loglevel=info
+worker: celery -A planekstest worker --beat
