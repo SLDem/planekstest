@@ -25,6 +25,7 @@ function get_schema_task_info(task_id) {
         data: {'task_id': task_id},
         success: function(data) {
             s_frm.html('');
+            console.log(data)
             if (data.state == 'PENDING') {
                 s_frm.html('Please wait...');
                 console.log(data, task_id, 'pending')
