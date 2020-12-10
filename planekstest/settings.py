@@ -136,10 +136,9 @@ LOGIN_REDIRECT_URL = 'schemas'
 LOGOUT_REDIRECT_URL = 'login'
 
 broker_url = 'amqps://qrnafteg:1B_7BJ9Ti5fQ098Phoqj8LVYRSSDkdop@jellyfish.rmq.cloudamqp.com/qrnafteg'
-broker_pool_limit = 1
 broker_heartbeat = None
 broker_connection_timeout = 30
-result_backend = None
+result_backend = 'database'
 event_queue_expires = 60
 worker_prefetch_multiplier = 1
 worker_concurrency = 50
