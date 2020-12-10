@@ -134,10 +134,8 @@ STATICFILES_DIRS = (
 LOGIN_REDIRECT_URL = 'schemas'
 LOGOUT_REDIRECT_URL = 'login'
 
-CELERY_BROKER_URL = 'redis://:pd901027e0ad0f3dad16304bf9b2cf2f8fe3fd656317e1653fa0292b1ebd37c80@ec2-54-161-251-41' \
-                    '.compute-1.amazonaws.com:7019 '
-CELERY_RESULT_BACKEND = 'redis://:pd901027e0ad0f3dad16304bf9b2cf2f8fe3fd656317e1653fa0292b1ebd37c80@ec2-54-161-251-41' \
-                        '.compute-1.amazonaws.com:7019 '
+CELERY_BROKER_URL = 'redis://:p98ee57b101ee894443738f814985b4b093adbca43d64042e65cfca069be4555c@ec2-50-16-128-84.compute-1.amazonaws.com:12099'
+CELERY_RESULT_BACKEND = 'redis://:p98ee57b101ee894443738f814985b4b093adbca43d64042e65cfca069be4555c@ec2-50-16-128-84.compute-1.amazonaws.com:12099'
 
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
