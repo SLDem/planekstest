@@ -137,8 +137,10 @@ STATICFILES_DIRS = (
 LOGIN_REDIRECT_URL = 'schemas'
 LOGOUT_REDIRECT_URL = 'login'
 
-CELERY_BROKER_URL = 'redis://:p98ee57b101ee894443738f814985b4b093adbca43d64042e65cfca069be4555c@ec2-50-16-128-84.compute-1.amazonaws.com:12099'
-CELERY_RESULT_BACKEND = 'redis://:p98ee57b101ee894443738f814985b4b093adbca43d64042e65cfca069be4555c@ec2-50-16-128-84.compute-1.amazonaws.com:12099'
+CELERY_BROKER_URL = 'redis://:p98ee57b101ee894443738f814985b4b093adbca43d64042e65cfca069be4555c@ec2-50-16-128-84' \
+                    '.compute-1.amazonaws.com:12099 '
+CELERY_RESULT_BACKEND = 'redis://:p98ee57b101ee894443738f814985b4b093adbca43d64042e65cfca069be4555c@ec2-50-16-128-84' \
+                        '.compute-1.amazonaws.com:12099 '
 
 CELERY_CACHE_BACKEND = "db+sqlite:///celery.sqlite"
 CELERY_BROKER_BACKEND = "db+sqlite:///celery.sqlite"
