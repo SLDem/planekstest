@@ -4,6 +4,7 @@
 <div class="main-container">
 <form method="post" class="field-form">
     {% csrf_token %}
+
     <div>
         <select name="type" id="type">
             <option value="Name">Name</option>
@@ -15,6 +16,7 @@
 
         <input style="width: 240px;" type="text" name="value" placeholder="Name" value="{{ form.initial.value }}">
     </div>
+
     <div class="range-inputs-submit">
         <div id="range-inputs">
             <input type="number" name="start" placeholder="Start">
@@ -25,6 +27,7 @@
         <button class="main-button" type="submit">Save</button>
         <a href="{% url 'schema' object.schema.pk %}" class="main-link cancel-delete-link">Cancel</a>
     </div>
+
 </form>
 </div>
 

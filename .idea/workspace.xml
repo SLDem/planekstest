@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ce46af7-f654-483f-86bf-dc77fa595495" name="Default Changelist" comment="" />
+    <list default="true" id="1ce46af7-f654-483f-86bf-dc77fa595495" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/planekstest/schemas/edit_field.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planekstest/schemas/edit_field.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/planekstest/schemas/generate_random_schema.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planekstest/schemas/generate_random_schema.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/planekstest/schemas/new_schema.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planekstest/schemas/new_schema.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/planekstest/schemas/schema_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planekstest/schemas/schema_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/planekstest/schemas/schemafield_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planekstest/schemas/schemafield_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/planekstest/schemas/schemas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planekstest/schemas/schemas.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

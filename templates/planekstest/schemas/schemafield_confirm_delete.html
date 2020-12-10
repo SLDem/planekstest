@@ -6,6 +6,7 @@
         {% csrf_token %}
         <p>Are you sure you want to delete this field?{{ object.name }}?</p>
         <br>
+
         <div class="edit-buttons">
             <button class="main-button" type="submit">Confirm</button>
             <a href="{{ view.get_success_url }}" class="main-link cancel-delete-link">Cancel</a>
