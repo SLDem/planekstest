@@ -29,7 +29,8 @@ def create_schema(total_entries, pk):
             elif field.type == 'Range Integer':
                 value = random.randint(field.start, field.end)
 
-            FieldRow.objects.create(data=value, field=field)
+            row = FieldRow.objects.create(data=value, field=field)
+            row.save()
             current_task.update_state(state='PROGRESS',
                                       meta={'current': i, 'total': total_entries,
                                             'percent': int((float(i) / total_entries) * 100)})
