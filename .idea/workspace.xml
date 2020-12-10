@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planekstest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/planekstest/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,9 +132,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607509486580" />
-    <state x="667" y="253" width="852" height="673" key="find.popup" timestamp="1607514706148">
+    <state x="667" y="253" width="852" height="673" key="find.popup" timestamp="1607586500849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="852" height="673" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607514706148" />
+    <state x="667" y="253" width="852" height="673" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607586500849" />
   </component>
 </project>
