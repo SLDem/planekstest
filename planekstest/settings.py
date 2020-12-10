@@ -135,8 +135,14 @@ STATICFILES_DIRS = (
 LOGIN_REDIRECT_URL = 'schemas'
 LOGOUT_REDIRECT_URL = 'login'
 
-CELERY_BROKER_URL = 'redis://:p98ee57b101ee894443738f814985b4b093adbca43d64042e65cfca069be4555c@ec2-50-16-128-84.compute-1.amazonaws.com:12099'
-CELERY_RESULT_BACKEND = 'redis://:p98ee57b101ee894443738f814985b4b093adbca43d64042e65cfca069be4555c@ec2-50-16-128-84.compute-1.amazonaws.com:12099'
+broker_url = os.environ.get('amqps://qrnafteg:1B_7BJ9Ti5fQ098Phoqj8LVYRSSDkdop@jellyfish.rmq.cloudamqp.com/qrnafteg ')
+broker_pool_limit = 1
+broker_heartbeat = None
+broker_connection_timeout = 30
+result_backend = None
+event_queue_expires = 60
+worker_prefetch_multiplier = 1
+worker_concurrency = 50
 
 CELERY_CACHE_BACKEND = "db+sqlite:///celery.sqlite"
 CELERY_BROKER_BACKEND = "db+sqlite:///celery.sqlite"
