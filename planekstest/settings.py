@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'b(z)sa$$*&7bq)da38)y+c(m7!%hhlb#$hen0bc9v8%@uq0p)m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['planekstest.herokuapp.com', 'localhost']
 
@@ -134,8 +134,10 @@ STATICFILES_DIRS = (
 LOGIN_REDIRECT_URL = 'schemas'
 LOGOUT_REDIRECT_URL = 'login'
 
-CELERY_BROKER_URL = 'redis://:pd901027e0ad0f3dad16304bf9b2cf2f8fe3fd656317e1653fa0292b1ebd37c80@ec2-54-161-251-41.compute-1.amazonaws.com:7019'
-CELERY_RESULT_BACKEND = 'redis://:pd901027e0ad0f3dad16304bf9b2cf2f8fe3fd656317e1653fa0292b1ebd37c80@ec2-54-161-251-41.compute-1.amazonaws.com:7019'
+CELERY_BROKER_URL = 'redis://:pd901027e0ad0f3dad16304bf9b2cf2f8fe3fd656317e1653fa0292b1ebd37c80@ec2-54-161-251-41' \
+                    '.compute-1.amazonaws.com:7019 '
+CELERY_RESULT_BACKEND = 'redis://:pd901027e0ad0f3dad16304bf9b2cf2f8fe3fd656317e1653fa0292b1ebd37c80@ec2-54-161-251-41' \
+                        '.compute-1.amazonaws.com:7019 '
 
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
