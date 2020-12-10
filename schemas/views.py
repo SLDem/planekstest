@@ -38,7 +38,7 @@ def generate_random_schema(request, pk):
 def get_schema_task_info(request):
     task_id = request.GET.get('task_id', None)
     if task_id is not None:
-        task = AsyncResult(task_id, backend=None)
+        task = AsyncResult(task_id)
         data = {
             'state': task.state,
             'result': task.result,
